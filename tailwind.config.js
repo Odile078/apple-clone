@@ -9,11 +9,10 @@ module.exports = {
     extend: {
       colors:{
         brandblue:{
-          light:"#3559C7",
-          DEFAULT:"#2947A9",
-          dark:"#2947A9"
+          light:"#06c",
+          DEFAULT:"#06c",
+          dark:"#2997ff"
         },
-        brandorange:"#F9995D"
       }
     },
   },
