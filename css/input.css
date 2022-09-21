@@ -2,8 +2,90 @@
 @tailwind components;
 @tailwind utilities;
 @layer components{
+
     /* nav bar */
-   
+    .header{
+        @apply sticky top-0 bg-black bg-opacity-90 px-4 lg:px-10 xl:px-20 py-4 z-30
+    }
+    .header--default{
+        @apply hidden lg:block
+    }
+    .header--mobile{
+        @apply block lg:hidden
+    }
+    .header--default .nav{
+        @apply flex justify-center space-x-10 items-center
+    }
+    .header--mobile .nav{
+        @apply flex justify-between items-center
+    }
+    .nav__logo{
+        @apply text-xs text-white opacity-75
+    }
+    .nav__svg{
+        @apply text-xs text-white opacity-75
+    }
+    .nav__link {
+        @apply text-xs text-white opacity-75
+    }
+    .nav__link--hover {
+        @apply opacity-100
+    }
+    .nav__link--active{
+        @apply opacity-100
+    }
+    /* Hero Section */
+    .hero{
+        @apply relative h-screen flex justify-center 
+    }
+    .hero__img{
+        @apply absolute inset-0 object-cover object-center h-screen z-10 w-screen
+    }
+    .hero__content{
+        @apply mt-20 z-10 space-y-2 text-center
+    }
+    .hero__content--dark .hero__headline,.hero__content--dark .hero__subhead{
+        @apply text-gray-900
+    }
+    .hero__content--light .hero__headline,.hero__content--light .hero__subhead{
+        @apply text-white
+    }
+    .hero__headline{
+        @apply text-2xl font-bold 
+    }
+    .hero__subhead{
+        @apply text-base font-bold 
+    }
+    .hero__subhead-smaller{
+        @apply text-gray-700
+    }
+    .hero__links{
+        @apply flex space-x-3 items-center
+    }
+    /* Links */
+    .link {
+        @apply text-sm no-underline
+    }
+    .link--dark {
+        @apply text-brandblue-dark
+    }
+    .link--light{
+        @apply text-brandblue-light
+    }
+    .link--hover {
+        @apply underline
+    }
+    .link--active{
+        @apply underline
+    }
+    .link--after::after{
+        ;
+        
+            content: url('./svg/icons8-apple-logo.svg');
+            width: 200px;
+            height: 200px;
+          
+    }
     /* reputation card */
     
 }
