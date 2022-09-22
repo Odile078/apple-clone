@@ -29,17 +29,17 @@
         @apply text-xs text-white opacity-75
     }
     .nav__link--hover {
-        @apply opacity-100
+        @apply hover:opacity-100
     }
     .nav__link--active{
-        @apply opacity-100
+        @apply active:opacity-100
     }
     /* Hero Section */
     .hero{
         @apply relative h-screen flex justify-center 
     }
     .hero__img{
-        @apply absolute inset-0 object-cover object-center h-screen z-10 w-screen
+        @apply absolute inset-0 object-cover object-center h-screen z-10 w-full
     }
     .hero__content{
         @apply mt-20 z-10 space-y-2 text-center
@@ -60,7 +60,7 @@
         @apply text-gray-700
     }
     .hero__links{
-        @apply flex space-x-3 items-center
+        @apply flex space-x-3 items-center justify-center
     }
     /* Links */
     .link {
@@ -73,10 +73,10 @@
         @apply text-brandblue-light
     }
     .link--hover {
-        @apply underline
+        @apply hover:underline
     }
     .link--active{
-        @apply underline
+        @apply active:underline
     }
     .link--after::after{
         ;
@@ -86,6 +86,17 @@
             height: 200px;
           
     }
-    /* reputation card */
+    /* product card */
+    .product-series{
+        @apply grid grid-cols-1 md:grid-cols-2 gap-3
+    }
+    /* Gallery */
+    .slider__item{
+        @apply w-64 lg:w-[49rem]
+    }
+    .slider__link{
+        @apply absolute w-11/12 h-full bg-center bg-cover;
+        background-image:url('https://is1-ssl.mzstatic.com/image/thumb/NuIOgsGJ11I4jRoa7-GbSA/1378x774.jpg')
+    }
     
 }
