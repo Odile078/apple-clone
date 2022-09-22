@@ -72,6 +72,9 @@
     .link--light{
         @apply text-brandblue-light
     }
+    .link--gray{
+        @apply text-gray-500
+    }
     .link--hover {
         @apply hover:underline
     }
@@ -91,12 +94,62 @@
         @apply grid grid-cols-1 md:grid-cols-2 gap-3
     }
     /* Gallery */
+    .slider-wrapper{
+        @apply flex space-x-4
+    }
     .slider__item{
-        @apply w-64 lg:w-[49rem]
+        @apply w-64 lg:w-[49rem] relative h-96
     }
     .slider__link{
-        @apply absolute w-11/12 h-full bg-center bg-cover;
+        @apply absolute w-full h-full bg-center bg-cover bg-opacity-30 ;
         background-image:url('https://is1-ssl.mzstatic.com/image/thumb/NuIOgsGJ11I4jRoa7-GbSA/1378x774.jpg')
     }
+    /* Footer */
+    .visuallyHidden{
+        @apply sr-only
+    }
+    .footer{
+        @apply bg-gray-50 px-4 lg:px-10 xl:px-20 py-4
+    }
+    /* Footer notes */
+    .footnotes__list{
+        @apply space-y-3 pb-4
+    }
     
+    .footnotes__item{
+        @apply text-xs text-gray-500 leading-5
+    }
+    /* Footer nav */
+    .footer-nav{
+        @apply grid grid-cols-2 lg:grid-cols-5 gap-4 py-4 border-t border-gray-300
+    }
+    .footer-nav__item{
+        @apply space-y-4
+    }
+    .footer-nav__title{
+        @apply font-bold text-xs text-gray-800
+    }
+    /* Footer legal */
+    .footer__shop{
+        @apply text-xs text-gray-500 leading-5 py-4 pb-2 border-b border-gray-300
+    }
+    .footer__legal{
+        @apply flex flex-col flex-wrap md:items-center md:justify-between md:flex-row py-2
+    }
+    .footer-legal__content{
+        @apply flex md:space-x-6 md:items-center flex-col md:flex-row
+    }
+    .footer-legal__copyright{
+        @apply text-gray-500 text-xs py-2
+    }
+    .footer-legal__links{
+        @apply flex md:items-center md:space-x-4 flex-wrap
+
+    }
+    .footer-legal__link {
+        @apply border-r border-gray-500 py-2
+    }
+    .footer_locale{
+        @apply order-first md:order-none mb-4 md:mb-0
+    }
 }
