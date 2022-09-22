@@ -140,14 +140,14 @@
         @apply flex md:space-x-6 md:items-center flex-col md:flex-row
     }
     .footer-legal__copyright{
-        @apply text-gray-500 text-xs py-2
+        @apply text-gray-500 text-xs my-2
     }
     .footer-legal__links{
         @apply flex md:items-center md:space-x-4 flex-wrap
 
     }
     .footer-legal__link {
-        @apply border-r border-gray-500 py-2
+        @apply border-r border-gray-500 my-2
     }
     .footer_locale{
         @apply order-first md:order-none mb-4 md:mb-0
